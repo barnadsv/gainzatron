@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button } from '$lib/components/ui/button/index.ts'
+	import {Button} from '$lib/components/ui/button/index.ts'
 </script>
 
 <h1 class="text-6xl">Programme</h1>

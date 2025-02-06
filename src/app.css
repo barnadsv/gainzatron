@@ -54,6 +54,7 @@
 	h5,
 	h6 {
 		text-wrap: balance;
+		@apply font-serif font-bold;
 	}
 
 	p {
@@ -63,6 +64,7 @@
 	:root {
 		--radius: 0.5rem;
 		--padding-inline: clamp(1rem, 5vw, 3rem);
+		--font-serif: 'Cherry Swash', system-ui;
 	}
 
 	:root {
@@ -120,5 +122,62 @@
 
 	.stack > * {
 		grid-area: stack;
+	}
+
+	/* View Transitions */
+	body {
+		view-transition-name: body;
+	}
+
+	/* "normal" navigation */
+	@keyframes fade-out-to-left {
+		to {
+			opacity: 0%;
+			transform: translateX(-100%);
+		}
+	}
+
+	@keyframes slide-from-right {
+		from {
+			transform: translateX(100%);
+		}
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		:root::view-transition-old(body) {
+			pointer-events: none;
+			animation: 300ms ease-out both fade-out-to-left;
+		}
+
+		:root::view-transition-new(body) {
+			pointer-events: none;
+			animation: 300ms ease-out both slide-from-right;
+		}
+	}
+
+	/* "back" navigation */
+	@keyframes fade-out-to-right {
+		to {
+			opacity: 0%;
+			transform: translateX(100%);
+		}
+	}
+
+	@keyframes slide-from-left {
+		from {
+			transform: translateX(-100%);
+		}
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		:root[data-back]::view-transition-old(body) {
+			pointer-events: none;
+			animation: 300ms ease-out both fade-out-to-right;
+		}
+
+		:root[data-back]::view-transition-new(body) {
+			pointer-events: none;
+			animation: 300ms ease-out both slide-from-left;
+		}
 	}
 }

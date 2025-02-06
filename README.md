@@ -1,5 +1,7 @@
 # Magrippis Gainzatron
 
+![e2e](https://github.com/johnnify/gainzatron/actions/workflows/playwright.yaml/badge.svg)
+
 A fitness app implemented in SvelteKit.
 
 _Testing with Playwright_
@@ -11,3 +13,9 @@ _Testing with Playwright_
 ```
 pnpm create playwright
 ```
+
+_References:_
+
+https://fontsource.org/
+https://undraw.co/
+https://unsplash.com/pt-br

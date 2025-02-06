@@ -3,8 +3,8 @@
 	import ThemeToggleIcon from './ThemeToggleIcon.svelte'
 </script>
 
-<header class="flex items-center justify-between">
-	<Button class="font-bold" variant="ghost" href="/">Gainzatron</Button>
+<header class="flex items-center justify-between px-inline py-2">
+	<Button class="font-serif font-bold" variant="ghost" href="/">Gainzatron</Button>
 	<div class="flex items-center">
 		<nav>
 			<Button variant="ghost" href="/contact">Contact</Button>
@@ -12,11 +12,20 @@
 		<Button
 			variant="ghost"
 			size="icon"
+			aria-label="Toggle theme"
 			onclick={() => {
-				window?.toggleTheme && window.toggleTheme()
+				if (window?.toggleTheme) {
+					window.toggleTheme()
+				}
 			}}
 		>
 			<ThemeToggleIcon class="size-5" />
 		</Button>
 	</div>
 </header>
+
+<style lang="postcss">
+	header {
+		view-transition-name: header;
+	}
+</style>

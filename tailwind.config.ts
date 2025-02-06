@@ -1,5 +1,5 @@
-import { fontFamily } from 'tailwindcss/defaultTheme'
-import type { Config } from 'tailwindcss'
+import {fontFamily} from 'tailwindcss/defaultTheme'
+import type {Config} from 'tailwindcss'
 import tailwindcssAnimate from 'tailwindcss-animate'
 
 const config: Config = {
@@ -68,22 +68,23 @@ const config: Config = {
 			},
 			fontFamily: {
 				sans: [...fontFamily.sans],
+				serif: ['var(--font-serif)', ...fontFamily.serif],
 			},
 			padding: {
 				inline: 'var(--padding-inline)',
 			},
 			keyframes: {
 				'accordion-down': {
-					from: { height: '0' },
-					to: { height: 'var(--bits-accordion-content-height)' },
+					from: {height: '0'},
+					to: {height: 'var(--bits-accordion-content-height)'},
 				},
 				'accordion-up': {
-					from: { height: 'var(--bits-accordion-content-height)' },
-					to: { height: '0' },
+					from: {height: 'var(--bits-accordion-content-height)'},
+					to: {height: '0'},
 				},
 				'caret-blink': {
-					'0%,70%,100%': { opacity: '1' },
-					'20%,50%': { opacity: '0' },
+					'0%,70%,100%': {opacity: '1'},
+					'20%,50%': {opacity: '0'},
 				},
 			},
 			animation: {

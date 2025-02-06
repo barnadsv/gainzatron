@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button } from '$lib/components/ui/button/index.ts'
+	import {Button} from '$lib/components/ui/button/index.ts'
 </script>
 
 <div class="stack h-[50svh] bg-gradient-to-r from-orange-500 via-orange-300 to-teal-500">
