@@ -30,5 +30,19 @@ export default ts.config(
 				parser: ts.parser,
 			},
 		},
+	},
+	{
+		ignores: ['build/', '.svelte-kit/', 'dist/'],
+	},
+	{
+		rules: {
+			'@typescript-eslint/ban-ts-comment': ['warn'],
+			'@typescript-eslint/no-var-requires': ['off'],
+			'@typescript-eslint/no-unused-vars': ['warn'],
+			'no-constant-condition': ['off'],
+			'svelte/no-at-html-tags': ['off'],
+			'svelte/invalid-css-identifier': ['off'],
+			'svelte/valid-compile': ['off'],
+		},
 	}
 )

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Hero from './Hero.svelte'
-	import {Button} from '$lib/components/ui/button/index.ts'
+	import {Button} from '$lib/components/ui/button'
 </script>
 
 <Hero />
