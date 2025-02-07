@@ -20,3 +20,5 @@ https://fontsource.org/
 https://undraw.co/
 https://unsplash.com/pt-br
 https://volta.sh/
+https://plausible.io/
+https://realfavicongenerator.net/

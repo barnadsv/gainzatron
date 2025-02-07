@@ -1,0 +1,21 @@
+{
+	"name": "Gainzatron",
+	"short_name": "Gainzatron",
+	"icons": [
+		{
+			"src": "/favicon@192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/favicon@310x310.png",
+			"sizes": "310x310",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	],
+	"theme_color": "#ea580c",
+	"background_color": "#1c1917",
+	"display": "standalone"
+}
